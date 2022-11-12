@@ -1,0 +1,14 @@
+{
+    "cmake.generator": "Ninja",
+    "cmake.buildDirectory": "${workspaceFolder}/build",
+    "cmake.configureOnOpen": false,
+    "cmake.configureOnEdit": false,
+    "clangd.arguments": [
+        "--header-insertion=never",
+        "--function-arg-placeholders=false",
+        "--clang-tidy"
+    ],
+    "C_Cpp.intelliSenseEngine": "Disabled",
+    "editor.gotoLocation.alternativeDefinitionCommand": "editor.action.revealDeclaration",
+    "xmake.compileCommandsDirectory": "build",
+}
