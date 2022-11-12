@@ -1,21 +1,18 @@
 -- project
-set_project("xmake-shared")
+set_project("qtwidgets")
 set_version("0.0.1")
 
 -- set ouput dir
 set_config("xmake_runtime_output_dir", "$(buildir)/bin")
 set_config("xmake_library_output_dir", "$(buildir)/lib")
 
--- add library
-includes("libshared")
-
 -- add executable
-target("main")
-    add_rules("std.exe")
+target("qtwidgets")
+    add_rules("qt.widgetapp", "std.exe")
 
     -- add files
-    add_files("main.c")
+    add_files("main.cpp")
 
-    -- add link libraries
-    add_deps("libshared")
+    -- add frameworks
+    add_frameworks("QtSvg")
 target_end()

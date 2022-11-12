@@ -10,7 +10,7 @@ task("f2")
 
     set_menu {
         usage = "xmake f2"
-        , description = "Run config and generate compile commands to build dir."
+        , description = "Generate compile commands to build dir."
         , options = {}
     }
 task_end()
