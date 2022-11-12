@@ -13,7 +13,7 @@ Series of C/C++ projects using xmake, may be helpful to those who are already fa
 + Configure
 
     ```sh
-    xmake f2
+    xmake f | xmake f2
     ````
     + Configure the project and generate `compile_commands.json` to build directory.
 
