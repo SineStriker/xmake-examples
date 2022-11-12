@@ -6,14 +6,14 @@ set_project("libshared")
 set_version("0.0.1")
 
 -- libshared config
-set_config("libshared_build_static", "on")
+set_config("libshared_build_static", "off")
 
 -- add library
 target("libshared")
     if is_config("libshared_build_static", "on") then
-        set_kind("static")
+        add_rules("std.lib")
     else
-        set_kind("shared")
+        add_rules("std.dll")
     end
     
     -- add files
@@ -29,3 +29,4 @@ target("libshared")
 
     -- include dirs
     add_includedirs("include", {public = true})
+target_end()
